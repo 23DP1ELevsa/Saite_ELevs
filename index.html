@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransportaNoma - Visi transporta veidi visā Latvijā</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Galvene -->
+    <header>
+        <div class="header-content">
+            <div class="logo" id="main-logo">
+                <i class="fas fa-car"></i>
+                <span>TransportaNoma.lv</span>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Atvērt izvēlni">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#" class="active" id="main-link">Sākums</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Par mums <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" data-section="vesture">Vēsture</a>
+                            <a href="#" data-section="komanda">Komanda</a>
+                            <a href="#" data-section="partneri">Partneri</a>
+                            <a href="#" data-section="kontakti">Kontakti</a>
+                        </div>
+                    </li>
+                    <li><a href="#nomas-karte">Nomas karte</a></li>
+                    <li><a href="#rezervacijas-process">Rezervācijas process</a></li>
+                    <li><a href="#lietotaja-profils">Lietotāja profils</a></li>
+                </ul>
+            </nav>
+            
+            <div class="theme-container">
+                <label class="theme-label">
+                    <i class="fas fa-sun"></i>
+                    <div class="theme-switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </div>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Galvenā satura sadaļa ar sānu joslu -->
+    <div class="main-container">
+        <main>
+            <!-- Galvenais saturs -->
+            <div id="main-content">
+                <!-- Sākums -->
+                <section class="content-section">
+                    <h2 class="section-title">Transporta noma visā Latvijā</h2>
+                    <p>Mūsu platforma piedāvā plašu transporta veidu klāstu, kas atbilst dažādām vajadzībām un atrašanās vietām. No pilsētām līdz laukiem un ūdens tilpnēm - mēs esam klāt ar piemērotu transporta risinājumu.</p>
+                    
+                    <div class="highlight">
+                        <h3>Platformas priekšrocības:</h3>
+                        <ul class="transport-list">
+                            <li>Vienota platforma visiem transporta veidiem</li>
+                            <li>Ērta un ātra rezervācija</li>
+                            <li>Nomas punkti visā Latvijā</li>
+                            <li>Dažādas maksājumu iespējas</li>
+                            <li>24/7 klientu atbalsts</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Par mums -->
+                <section class="content-section">
+                    <h2 class="section-title">Par mums</h2>
+                    <p>Mēs esam moderns transporta nomas serviss, kas apvienojis visus transporta veidus vienā platformā. Mūsu mērķis ir nodrošināt ērtu un pieejamu transporta nomas pieredzi ikvienam, neatkarīgi no atrašanās vietas.</p>
+                    
+                    <div class="highlight">
+                        <h3>Mūsu platforma piedāvā:</h3>
+                        <ul class="transport-list">
+                            <li><strong>Pilsētās:</strong> automašīnas un motocikli</li>
+                            <li><strong>Lauku reģionos:</strong> pitbaiki un kvadricikli</li>
+                            <li><strong>Pie ūdenstilpnēm:</strong> ūdens motocikli</li>
+                        </ul>
+                    </div>
+                    
+                    <p>Visi transporta līdzekļi ir apdrošināti, regulāri apkopti un sagatavoti lietošanai dažādos apstākļos. Mēs nodrošinām arī 24/7 atbalstu visiem mūsu klientiem.</p>
+                </section>
+
+                <!-- Kartiņu sadaļa -->
+                <section class="cards-section">
+                    <div class="cards-container">
+                        <h2 class="cards-title">Populārie transporta veidi</h2>
+                        
+                        <div class="card-container">
+                            <!-- Pirmā karte -->
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Automašīna">
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Automašīnas</h3>
+                                    <p class="card-description">Plašs automašīnu klāsts dažādām vajadzībām - no ekonomiskiem kompaktajiem auto līdz ģimenes minivēniem un luksusa automašīnām. Visas automašīnas ir apdrošinātas un regulāri apkoptas.</p>
+                                    <div class="card-price">
+                                        <span class="original">€ 39,00/dienā</span>
+                                        <span class="discount">€ 29,00/dienā</span>
+                                    </div>
+                                    <a href="#" class="card-button">Rezervēt tagad</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Otrā karte -->
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Motocikls">
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Motocikli</h3>
+                                    <p class="card-description">Izbaudiet brīvības sajūtu ar mūsu motociklu nomas pakalpojumu. Piedāvājam dažādus motociklu veidus - no sporta līdz tūrisma motocikliem. Nodrošinām arī drošības ekipējumu.</p>
+                                    <div class="card-price">
+                                        <span class="original">€ 59,00/dienā</span>
+                                        <span class="discount">€ 49,00/dienā</span>
+                                    </div>
+                                    <a href="#" class="card-button">Rezervēt tagad</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Trešā karte -->
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1590239926044-4131f5d0654d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Ūdens motocikls">
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Ūdens motocikli</h3>
+                                    <p class="card-description">Piedzīvojiet neaizmirstamus brīžus uz ūdens ar mūsu ūdens motocikliem. Pieejami dažādi modeļi gan pieredzējušiem, gan iesācējiem. Nodrošinām arī dzīvesvestes un instruktāžu.</p>
+                                    <div class="card-price">
+                                        <span class="original">€ 89,00/dienā</span>
+                                        <span class="discount">€ 69,00/dienā</span>
+                                    </div>
+                                    <a href="#" class="card-button">Rezervēt tagad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Nomas karte -->
+                <section class="content-section">
+                    <h2 id="nomas-karte" class="section-title">Nomas karte</h2>
+                    <p>Mūsu platformā ir pieejama interaktīva karte ar visiem nomas punktiem visā Latvijā. Katrs nomas punkts ir atzīmēts atšķirīgā krāsā atkarībā no transporta veida, kas tur pieejams.</p>
+                    
+                    <div class="highlight">
+                        <h3>Krāsu nozīme kartē:</h3>
+                        <ul class="transport-list">
+                            <li style="color: #3498db;">Zils - automašīnas</li>
+                            <li style="color: #e74c3c;">Sarkans - motocikli</li>
+                            <li style="color: #2ecc71;">Zaļš - pitbaiki</li>
+                            <li style="color: #f39c12;">Oranžs - kvadricikli</li>
+                            <li style="color: #9b59b6;">Violets - ūdens motocikli</li>
+                        </ul>
+                    </div>
+                    
+                    <p>Noklikšķinot uz jebkura punkta kartē, parādīsies informācija par attiecīgo nomas punktu, tostarp adrese, darba laiks, kontaktinformācija un pieejamie transporta veidi.</p>
+                </section>
+
+                <!-- Rezervācijas process -->
+                <section class="content-section">
+                    <h2 id="rezervacijas-process" class="section-title">Rezervācijas process</h2>
+                    <p>Mūsu platformā transporta rezervēšana ir vienkārša un ērta. Process ietver sekojošas darbības:</p>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>1. Izvēle</h3>
+                            <p>Izvēlieties vēlamo transporta veidu un nomas periodu. Varat izvēlēties no dažādiem transporta veidiem atkarībā no vajadzībām.</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>2. Rezervācija</h3>
+                            <p>Aizpildiet rezervācijas formu, norādot vajadzīgo informāciju. Varat arī izvēlēties papildu pakalpojumus.</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>3. Apstiprinājums</h3>
+                            <p>Pēc rezervācijas veikšanas saņemsiet apstiprinājumu ar visu nepieciešamo informāciju.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight">
+                        <h3>Maksājumu iespējas:</h3>
+                        <ul class="transport-list">
+                            <li>Maksājums ar kredītkarti</li>
+                            <li>Maksājums skaidrā naudā pieņemšanas punktā</li>
+                            <li>Mobilais maksājums</li>
+                        </ul>
+                    </div>
+                    
+                    <p>Visās cenās ir iekļauts transporta līdzekļa apdrošināšana un tehniskā apkope. Papildus jāmaksā tikai drošības depozīts, kas tiek atgriezts pēc transporta atdošanas.</p>
+                </section>
+
+                <!-- Lietotāja profils -->
+                <section class="content-section">
+                    <h2 id="lietotaja-profils" class="section-title">Lietotāja profils</h2>
+                    <p>Lietotāji var izveidot personīgo profilu mūsu platformā, lai piekļūtu papildu iespējām un ērtāk pārvaldītu savas rezervācijas.</p>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Reģistrācija</h3>
+                            <p>Lietotāji var reģistrēties platformā, izmantojot e-pasta adresi vai pieslēgties ar sociālo mediju kontiem.</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>Profila pārvaldība</h3>
+                            <p>Lietotāja profilā var rediģēt personīgo informāciju, apskatīt rezervāciju vēsturi un pārvaldīt maksājumu metodes.</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>Rezervāciju pārvaldība</h3>
+                            <p>Lietotāji var apskatīt savas aktīvās rezervācijas, to statuss un veikt nepieciešamās darbības.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Dropdown saturs -->
+            <div id="dropdown-content">
+                <!-- Vēsture -->
+                <section id="vesture" class="dropdown-section">
+                    <a href="#" class="back-to-main"><i class="fas fa-arrow-left"></i> Atpakaļ uz galveno lapu</a>
+                    <h2 class="section-title">Vēsture</h2>
+                    <p>TransportaNoma.lv tika dibināta 2018. gadā ar mērķi apvienot visus transporta nomas pakalpojumus vienā platformā. Sākotnēji mūsu pakalpojumi bija pieejami tikai Rīgā, bet jau pirmajā darbības gadā mēs paplašinājām savu klāstu un ģeogrāfiju.</p>
+                    
+                    <div class="highlight">
+                        <h3>Mūsu vēstures galvenie notikumi:</h3>
+                        <ul class="transport-list">
+                            <li><strong>2018. gads</strong> - Platformas dibināšana un darbības sākšana Rīgā</li>
+                            <li><strong>2019. gads</strong> - Pakalpojumu paplašināšana uz visām lielākajām pilsētām Latvijā</li>
+                            <li><strong>2020. gads</strong> - Ūdens transporta pievienošana klāstam</li>
+                            <li><strong>2021. gads</strong> - Mobilo lietotņu izstrāde un palaišana</li>
+                            <li><strong>2022. gads</strong> - Partnerības ar viesnīcu tīkliem un tūrisma aģentūrām</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Komanda -->
+                <section id="komanda" class="dropdown-section">
+                    <a href="#" class="back-to-main"><i class="fas fa-arrow-left"></i> Atpakaļ uz galveno lapu</a>
+                    <h2 class="section-title">Komanda</h2>
+                    <p>Mūsu komandu veido pieredzējuši speciālisti no transporta, tūrisma un tehnoloģiju jomas. Mēs strādājam kopā, lai nodrošinātu augstākā līmeņa pakalpojumus mūsu klientiem.</p>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Mārīte Kalniņa</h3>
+                            <p><strong>Dibinātāja un CEO</strong></p>
+                            <p>Mārīte ir transporta nomas nozares speciāliste ar vairāk nekā 10 gadu pieredzi. Viņa ir atbildīga par uzņēmuma stratēģisko attīstību.</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>Jānis Bērziņš</h3>
+                            <p><strong>Tehniskās nodaļas vadītājs</strong></p>
+                            <p>Jānis nodrošina, ka visi mūsu transporta līdzekļi ir tehniskā labā stāvoklī un atbilst drošības standartiem.</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>Līga Ozoliņa</h3>
+                            <p><strong>Klientu apkalpošanas vadītāja</strong></p>
+                            <p>Līga un viņas komanda nodrošina augstākā līmeņa atbalstu mūsu klientiem 24/7.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Partneri -->
+                <section id="partneri" class="dropdown-section">
+                    <a href="#" class="back-to-main"><i class="fas fa-arrow-left"></i> Atpakaļ uz galveno lapu</a>
+                    <h2 class="section-title">Partneri</h2>
+                    <p>Mēs sadarbojamies ar vadošajiem uzņēmumiem transporta, tūrisma un tehnoloģiju jomās, lai nodrošinātu mūsu klientiem vislabākos pakalpojumus.</p>
+                    
+                    <div class="highlight">
+                        <h3>Mūsu galvenie partneri:</h3>
+                        <ul class="transport-list">
+                            <li><strong>Latvijas Tūrisma asociācija</strong> - Sadarbība tūrisma nozares attīstībā</li>
+                            <li><strong>Rīgas Starptautiskā autoosta</strong> - Īpaši piedāvājumi lidostas klientiem</li>
+                            <li><strong>Viesnīcu tīkli</strong> - Ērti nomas punkti viesnīcās visā Latvijā</li>
+                            <li><strong>Apdrošināšanas kompānijas</strong> - Visaptveroša transporta apdrošināšana</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Kontakti -->
+                <section id="kontakti" class="dropdown-section">
+                    <a href="#" class="back-to-main"><i class="fas fa-arrow-left"></i> Atpakaļ uz galveno lapu</a>
+                    <h2 class="section-title">Kontakti</h2>
+                    <p>Ja jums ir jautājumi vai nepieciešama palīdzība, sazinieties ar mums. Mēs esam klāt, lai atbildētu uz visiem jūsu jautājumiem.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Adrese</h3>
+                            <p>Rīga, Brīvības iela 123</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Telefons</h3>
+                            <p>+371 12345678</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>E-pasts</h3>
+                            <p>info@transportanoma.lv</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Darba laiks</h3>
+                            <p>P-Pk: 08:00 - 22:00</p>
+                            <p>Sv: 09:00 - 20:00</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Sānu josla -->
+        <aside>
+            <h3 class="sidebar-title">Noderīgi resursi</h3>
+            <ul class="related-articles">
+                <li><a href="#"><i class="fas fa-newspaper"></i> Kā izvēlēties piemērotāko transporta veidu</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> Drošības noteikumi dažādiem transporta veidiem</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> Populārākie nomas punkti Latvijā</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> Ceļojumu plānošanas padomi</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> Kā ietaupīt naudu, izmantojot mūsu platformu</a></li>
+            </ul>
+            
+            <div class="promo-banner">
+                <h3>Īpašais piedāvājums</h3>
+                <p>Rezervējiet jebkuru transporta līdzekli uz 3 dienām un saņemiet ceturto dienu bez maksas!</p>
+                <a href="#" class="btn">Uzzināt vairāk</a>
+            </div>
+            
+            <h3 class="sidebar-title" style="margin-top: 2rem;">Populāri transporta veidi</h3>
+            <ul class="related-articles">
+                <li><a href="#"><i class="fas fa-car"></i> Automašīnas</a></li>
+                <li><a href="#"><i class="fas fa-motorcycle"></i> Motocikli</a></li>
+                <li><a href="#"><i class="fas fa-water"></i> Ūdens motocikli</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Kājene -->
+    <footer>
+        <p>&copy; 2025 TransportaNoma.lv - Visas tiesības aizsargātas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
